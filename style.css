@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 96%;
+    margin: 2%;
+}
+
+#content-container{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 2%;
+}
+
+button{
+    background-color: rgb(204, 201, 201);
+    width: 15%;
+    padding: 1%;
+    margin: 2%;
+    text-align: center;
+
+}
+
+#steps-container{
+    width: 100%;
+    text-align: left;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+h2{
+    margin-bottom: 1.5%;
+}
+
+.step{
+    width: 96%;
+    padding: 2%;
+    background-color: aquamarine;
+    top: 200px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 3s, top 2s;
+}
