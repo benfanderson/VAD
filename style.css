@@ -21,14 +21,16 @@ h1{
     width: 100%;
     background-color: black;
     color: white;
-    font-size: 5em;
+    font-size: 4em;
+    padding: 5%;
 }
 
 .stepButton{
     background-color: rgb(204, 201, 201);
-    width: 15%;
+    width: 25%;
     padding: 1%;
     margin: 2%;
+    font-size: 1em;
     text-align: center;
     transition: opacity 3s, top 2s;
 
@@ -53,5 +55,5 @@ h2{
     top: 200px;
     position: absolute;
     opacity: 0;
-    transition: opacity 3s, top 2s;
+    transition: opacity 2.5s, top 2s;
 }
