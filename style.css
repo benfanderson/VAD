@@ -17,12 +17,20 @@ h1{
     margin-bottom: 2%;
 }
 
-button{
+#startButton{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 5em;
+}
+
+.stepButton{
     background-color: rgb(204, 201, 201);
     width: 15%;
     padding: 1%;
     margin: 2%;
     text-align: center;
+    transition: opacity 3s, top 2s;
 
 }
 

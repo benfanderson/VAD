@@ -3,7 +3,19 @@ window.onload = function() {
      
     let counter = 0;
 
+    const startButton = document.getElementById('startButton');
+    startButton.addEventListener('click', function(){
+        startButton.style.top = -400;
+        startButton.style.opacity ='0';
+        steps[counter].style.top = 0;
+        steps[counter].style.opacity = '1';
+        counter = counter + 1;
+        forwardButton.style.display = 'inline';
+
+    });
+
     const forwardButton = document.getElementById('forwardButton')
+    forwardButton.style.display ='none';
     forwardButton.addEventListener('click',function(){
         if (counter > 0){
             steps[(counter-1)].style.top = -400;
