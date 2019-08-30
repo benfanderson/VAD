@@ -13,17 +13,24 @@
     text-align: center;
 }
 
-h1{
-    margin-bottom: 2%;
+#masthead{
+    width:100%;
+    height: auto;
+    margin-bottom: 5%;
 }
 
 #startButton{
     width: 100%;
-    background-color: rgb(105, 139, 243);
+    background-color: rgb(64, 108, 241);
     color: white;
-    font-size: 4em;
-    text-shadow: 2px 2px black;
+    font-size: 1.2em;
+    text-shadow: 2px 2px rgb(70, 68, 68);
     padding: 5%;
+    border-radius: 20px;
+}
+
+#startButton h2{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .stepButton{
@@ -79,16 +86,12 @@ h2{
         margin: auto;
     }
 
-    h1{
-        font-size: 3em;
-    }
-
     #steps-container{
         height: 60vh;
     }
     
     #startButton{
-        font-size: 5em;
+        font-size: 2em;
         padding:5%
     }
 
@@ -114,6 +117,10 @@ h2{
 
     #content-container{
         width:60%;
+    }
+
+    #startButton{
+        font-size: 3em;
     }
 
     #steps-container{
