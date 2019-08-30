@@ -6,11 +6,12 @@ window.onload = function() {
     const startButton = document.getElementById('startButton');
     startButton.addEventListener('click', function(){
         startButton.style.top = -400;
-        startButton.style.opacity ='0';
+        // startButton.style.opacity ='0';
         steps[counter].style.top = 0;
         steps[counter].style.opacity = '1';
         counter = counter + 1;
         forwardButton.style.display = 'inline';
+        backButton.style.display = 'inline'
 
     });
 
@@ -38,13 +39,20 @@ window.onload = function() {
         steps[(counter-1)].style.top = 200;
         steps[(counter-1)].style.opacity = '0';
         counter = counter - 1;
-        steps[(counter-1)].style.top = 0;
-        steps[(counter-1)].style.opacity = '1';
-        if (counter <= 1) {
-            backButton.style.display = 'none';
+        if (counter > 0) {
+            steps[(counter-1)].style.top = 0;
+            steps[(counter-1)].style.opacity = '1';
         }
-        if (counter <= (steps.length)) {
+        if (counter == 0) {
+            startButton.style.top = 0;
+            startButton.style.opacity ='1';
+            backButton.style.display = 'none';
+            
+        }
+        if (counter <= (steps.length) && counter > 0) {
             forwardButton.style.display = 'inline';
+        } else {
+            forwardButton.style.display = 'none';
         }
     })
 

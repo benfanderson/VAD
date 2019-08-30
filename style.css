@@ -27,6 +27,9 @@
     text-shadow: 2px 2px rgb(70, 68, 68);
     padding: 5%;
     border-radius: 20px;
+    top: 0;
+    position: absolute;
+    transition: opacity 2.5s, top 2s;
 }
 
 #startButton h2{
@@ -60,7 +63,7 @@ h2{
 .step{
     width: 96%;
     padding: 2%;
-    background-color: rgb(145, 218, 228);
+    background-color: rgb(105, 139, 243);
     top: 200px;
     position: absolute;
     opacity: 0;
