@@ -51,7 +51,7 @@
 #steps-container{
     width: 100%;
     text-align: left;
-    height: 65vh;
+    height: 40vh;
     overflow: hidden;
     position: relative;
 }
@@ -63,11 +63,31 @@ h2{
 .step{
     width: 96%;
     padding: 2%;
-    background-color: rgb(105, 139, 243);
     top: 200px;
     position: absolute;
     opacity: 0;
     transition: opacity 2.5s, top 2s;
+    color: white;
+}
+
+.step h2{
+    color: rgba(255, 255, 0, 0.822)
+}
+
+.section1{
+    background-color: rgba(165, 42, 42, 0.856);
+}
+
+.section2{
+ background-color: rgb(75, 102, 107);
+}
+
+.section3{
+ background-color: rgb(151, 128, 173);
+}
+
+.section4{
+ background-color: rgb(90, 74, 104);
 }
 
 /*View for tablet*/
@@ -90,7 +110,7 @@ h2{
     }
 
     #steps-container{
-        height: 60vh;
+        height: 35vh;
     }
     
     #startButton{
@@ -112,6 +132,14 @@ h2{
     }
 }
 
+@media only screen 
+  and (min-width: 1000px) 
+  and (orientation: landscape) {
+        #steps-container{
+        height: 40vh;
+    }
+  }
+
 /*View for tablet*/
 @media (min-width: 1000px) {
     #container{
@@ -123,11 +151,11 @@ h2{
     }
 
     #startButton{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     #steps-container{
-        height: 40%;
+        height: 30%;
     }
 
     .stepButton{
