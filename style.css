@@ -19,20 +19,22 @@ h1{
 
 #startButton{
     width: 100%;
-    background-color: black;
+    background-color: rgb(105, 139, 243);
     color: white;
     font-size: 4em;
+    text-shadow: 2px 2px black;
     padding: 5%;
 }
 
 .stepButton{
     background-color: rgb(204, 201, 201);
-    width: 25%;
+    width: 10%;
     padding: 1%;
     margin: 2%;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
     transition: opacity 3s, top 2s;
+    border-radius: 25px;
 
 }
 
@@ -61,7 +63,7 @@ h2{
 /*View for tablet*/
 @media (min-width: 479px) {
     body{
-        background-color: rgb(134, 142, 167);
+        background-color: rgb(105, 139, 243);
     }
 
     #container{
@@ -97,5 +99,28 @@ h2{
     .step p{
         font-size: 1.5em;
         font-family: Arial, Helvetica, sans-serif
+    }
+
+    .stepButton{
+        font-size: 2em;
+    }
+}
+
+/*View for tablet*/
+@media (min-width: 1000px) {
+    #container{
+        width: 70%;
+    }
+
+    #content-container{
+        width:60%;
+    }
+
+    #steps-container{
+        height: 40%;
+    }
+
+    .stepButton{
+        padding: 0.5%;
     }
 }
