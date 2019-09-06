@@ -132,7 +132,7 @@ h2{
     }
 }
 
-@media only screen (min-device-width: 479px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (min-device-width: 479px) and (max-device-width: 1024px) and (orientation:landscape) {
     #steps-container{
         height: 40vh;
     }
