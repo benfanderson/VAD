@@ -132,13 +132,11 @@ h2{
     }
 }
 
-@media only screen 
-  and (min-width: 1000px) 
-  and (orientation: landscape) {
-        #steps-container{
+@media only screen (min-device-width: 479px) and (max-device-width: 1024px) and (orientation:landscape) {
+    #steps-container{
         height: 40vh;
     }
-  }
+}
 
 /*View for tablet*/
 @media (min-width: 1000px) {
