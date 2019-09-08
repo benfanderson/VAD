@@ -124,7 +124,7 @@ h2{
 
     .step p{
         font-size: 1.5em;
-        font-family: Arial, Helvetica, sans-serif
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .stepButton{
@@ -132,13 +132,16 @@ h2{
     }
 }
 
-@media only screen and (min-device-width: 479px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen 
+and (min-width: 479px) 
+and (max-width: 1024px) 
+and (orientation:landscape) {
     #steps-container{
         height: 40vh;
     }
 }
 
-/*View for tablet*/
+/*View for desktop*/
 @media (min-width: 1000px) {
     #container{
         width: 70%;
