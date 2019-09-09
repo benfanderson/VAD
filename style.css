@@ -14,9 +14,9 @@
 }
 
 #masthead{
-    width:100%;
-    height: auto;
-    margin-bottom: 5%;
+    width:40%;
+    margin-bottom: 2%;
+    float: right;
 }
 
 #startButton{
@@ -30,6 +30,7 @@
     top: 0;
     position: absolute;
     transition: opacity 2.5s, top 2s;
+    cursor: pointer;
 }
 
 #startButton h2{
@@ -45,6 +46,7 @@
     text-align: center;
     transition: opacity 3s, top 2s;
     border-radius: 25px;
+    cursor: pointer;
 
 }
 
@@ -132,14 +134,14 @@ h2{
     }
 }
 
-@media only screen 
-and (min-width: 479px) 
+/* @media only screen 
+and (min-width: 768px) 
 and (max-width: 1024px) 
 and (orientation:landscape) {
     #steps-container{
-        height: 40vh;
+        height: 50vh;
     }
-}
+} */
 
 /*View for desktop*/
 @media (min-width: 1000px) {
@@ -156,7 +158,7 @@ and (orientation:landscape) {
     }
 
     #steps-container{
-        height: 30%;
+        height: 35%;
     }
 
     .stepButton{
