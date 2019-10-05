@@ -11,7 +11,6 @@ window.onload = function () {
 
   const backButton = document.getElementById('backButton');
   backButton.style.display = 'none';
-
   startButton.addEventListener('click', () => {
     startButton.style.top = -400;
     steps[counter].style.top = 0;
