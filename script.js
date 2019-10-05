@@ -1,14 +1,15 @@
 window.onload = function() {
     const steps = document.getElementsByClassName('step');
+    const stepsContainer = document.getElementById('steps-container');
      
     let counter = 0;
 
     const startButton = document.getElementById('startButton');
     startButton.addEventListener('click', function(){
         startButton.style.top = -400;
-        // startButton.style.opacity ='0';
         steps[counter].style.top = 0;
         steps[counter].style.opacity = '1';
+        stepsContainer.style.height = steps[counter].offsetHeight+5;
         counter = counter + 1;
         forwardButton.style.display = 'inline';
         backButton.style.display = 'inline'
@@ -24,6 +25,7 @@ window.onload = function() {
         }   
         steps[counter].style.top = 0;
         steps[counter].style.opacity = '1';
+        stepsContainer.style.height = steps[counter].offsetHeight+5;
         counter = counter + 1;
         if (counter > 0){
             backButton.style.display ='inline';
@@ -42,11 +44,13 @@ window.onload = function() {
         if (counter > 0) {
             steps[(counter-1)].style.top = 0;
             steps[(counter-1)].style.opacity = '1';
+            stepsContainer.style.height = steps[counter-1].offsetHeight+5;
         }
         if (counter == 0) {
             startButton.style.top = 0;
             startButton.style.opacity ='1';
             backButton.style.display = 'none';
+            stepsContainer.style.height = startButton.offsetHeight;
             
         }
         if (counter <= (steps.length) && counter > 0) {
@@ -55,8 +59,4 @@ window.onload = function() {
             forwardButton.style.display = 'none';
         }
     })
-
-    
-
-    
 }
