@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#container {
+  width: 94%;
+  margin: 3%; }
+
+#content-container {
+  width: 100%;
+  text-align: center; }
+
+#masthead {
+  width: 40%;
+  margin-bottom: 2%;
+  float: right; }
+
+#startButton {
+  width: 100%;
+  background-color: #406cf1;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 2px 2px #464444;
+  padding: 5%;
+  border-radius: 20px;
+  top: 0;
+  position: absolute;
+  transition: opacity 2.5s, top 2s;
+  cursor: pointer; }
+  #startButton h2 {
+    font-family: 'Times New Roman', Times, serif; }
+
+.stepButton {
+  background-color: #ccc9c9;
+  width: 10%;
+  padding: 1%;
+  margin: 2%;
+  font-size: 1.3em;
+  text-align: center;
+  transition: opacity 3s, top 2s;
+  border-radius: 25px;
+  cursor: pointer; }
+
+#steps-container {
+  width: 100%;
+  text-align: left;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.75s; }
+
+.section1, .section2, .section3, .section4 {
+  width: 96%;
+  padding: 2%;
+  top: 200px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2.5s, top 2s;
+  color: white; }
+  .section1 h2, .section2 h2, .section3 h2, .section4 h2 {
+    color: rgba(255, 255, 0, 0.822);
+    text-align: center;
+    margin-bottom: 1.5%; }
+
+.section1 {
+  background-color: rgba(165, 42, 42, 0.856); }
+
+.section2 {
+  background-color: #4b666b; }
+
+.section3 {
+  background-color: #9780ad; }
+
+.section4 {
+  background-color: #5a4a68; }
+
+/*View for tablet*/
+@media (min-width: 479px) {
+  body {
+    background-color: #698bf3; }
+
+  #container {
+    width: 80%;
+    padding: 2%;
+    margin: auto;
+    background-color: white;
+    height: 97vh; }
+
+  #content-container {
+    width: 80%;
+    margin: auto; }
+
+  #steps-container {
+    height: 35vh; }
+
+  #startButton {
+    font-size: 2em;
+    padding: 5%; }
+
+  .section1 h2, .section2 h2, .section3 h2, .section4 h2 {
+    font-size: 2em; }
+
+  .section1 p, .section2 p, .section3 p, .section4 p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif; }
+
+  .stepButton {
+    font-size: 2em; } }
+/*View for desktop*/
+@media (min-width: 1000px) {
+  #container {
+    width: 70%; }
+
+  #content-container {
+    width: 60%; }
+
+  #startButton {
+    font-size: 2.5em; }
+
+  #steps-container {
+    height: 55%; }
+
+  .stepButton {
+    padding: 0.5%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -31,10 +31,9 @@
     position: absolute;
     transition: opacity 2.5s, top 2s;
     cursor: pointer;
-}
-
-#startButton h2{
-    font-family: 'Times New Roman', Times, serif;
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 
 .stepButton{
@@ -59,11 +58,7 @@
     transition: height 0.75s;
 }
 
-h2{
-    margin-bottom: 1.5%;
-}
-
-.step{
+%step{
     width: 96%;
     padding: 2%;
     top: 200px;
@@ -71,26 +66,31 @@ h2{
     opacity: 0;
     transition: opacity 2.5s, top 2s;
     color: white;
-}
-
-.step h2{
-    color: rgba(255, 255, 0, 0.822)
+    h2 {
+        color: rgba(255, 255, 0, 0.822);
+        text-align: center;
+        margin-bottom: 1.5%;
+    }
 }
 
 .section1{
+    @extend %step;
     background-color: rgba(165, 42, 42, 0.856);
 }
 
 .section2{
- background-color: rgb(75, 102, 107);
+    @extend %step;
+    background-color: rgb(75, 102, 107);
 }
 
 .section3{
- background-color: rgb(151, 128, 173);
+    @extend %step;
+    background-color: rgb(151, 128, 173);
 }
 
 .section4{
- background-color: rgb(90, 74, 104);
+    @extend %step;
+    background-color: rgb(90, 74, 104);
 }
 
 /*View for tablet*/
@@ -121,19 +121,24 @@ h2{
         padding:5%
     }
 
-    .step h2 {
-        font-size: 2em;
+    %step {
+        h2 {
+            font-size: 2em;
+        }
     }
 
-    .step p{
-        font-size: 1.5em;
-        font-family: Arial, Helvetica, sans-serif;
+    %step {
+        p{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     }
 
     .stepButton{
         font-size: 2em;
     }
 }
+
 /*View for desktop*/
 @media (min-width: 1000px) {
     #container{
